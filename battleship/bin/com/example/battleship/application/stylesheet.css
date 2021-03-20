@@ -1,0 +1,63 @@
+/* CSS Stylesheet for the battleship GUI */
+
+/* Removes the table column header - for all tables */
+
+.column-header-background { 
+    -fx-max-height: 0;
+    -fx-pref-height: 0;
+    -fx-min-height: 0;
+}
+
+
+/* Empty table row styling */
+
+#gametable .table-row-cell:empty {
+    -fx-background-color: transparent;
+	-fx-border-color: transparent;
+}
+ 
+#gametable .table-row-cell:empty .table-cell {
+    -fx-border-width: 0px;
+	-fx-border-color: transparent; 
+}
+
+
+/* Game table - Table row cell styling */
+
+#gametable .table-row-cell {
+	-fx-background-color: transparent;
+	-fx-border-color: gray; /* outer border of table */
+	-fx-table-cell-border-color: gray; /* cell border of table */
+	-fx-cell-size: 50px; /* cell height */
+}
+
+/* Row and column number tables - row cell styling */
+
+#rownumbertable .table-row-cell {
+    -fx-cell-size: 50px; /* cell height */
+	-fx-background-color: transparent;
+}
+
+
+#columnnumbertable .table-row-cell {
+    -fx-background-color: transparent;
+}
+
+/* Row and column number tables - text styling */
+
+#rownumbertable .table-column {
+  -fx-alignment: center;
+  -fx-font: 16px "Arial";
+  -fx-font-weight: bold;
+  -fx-border-color: white;
+}
+
+#columnnumbertable .table-column {
+  -fx-alignment: center;
+  -fx-font: 16px "Arial";
+  -fx-font-weight: bold;
+  -fx-border-color: white;
+}
+
+
+/* end */

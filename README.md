@@ -24,6 +24,8 @@ The application has the five Java classes (source code), two image files (which 
 The image files are used in the application to populate the cells of the Table during the game play.
 1) ship.png - This is placed in the game table cell when there is "hit".
 2) miss.png - This is placed in the game table cell when there is "miss".
+3) 
+![demo2battle](https://user-images.githubusercontent.com/58495779/111861980-695ab880-890f-11eb-8300-d62437823cc3.jpg)
 
 
 # CSS stylesheet:

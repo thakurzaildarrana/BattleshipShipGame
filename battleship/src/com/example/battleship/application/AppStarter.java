@@ -17,5 +17,28 @@ public class AppStarter extends Application{
 
 	}
 
-	
+	/*
+	 * The main entry point for all JavaFX applications. This 
+	 * method is called on the JavaFX Application Thread.
+	 * Initializes the GameWindow.
+	 */
+    @Override
+    public void start(Stage primaryStage) {
+    	
+		View gameWindow = new View();
+		Parent mainView = gameWindow.getView();
+		mainView.setStyle("-fx-background-color: white;");
+		Scene scene = new Scene(mainView);
+		scene.getStylesheets()
+				.add(getClass().getResource("stylesheet.css").toExternalForm());
+        primaryStage.setScene(scene); 
+        primaryStage.setResizable(false);
+        primaryStage.setTitle("Battleship");
+        primaryStage.show();
+		
+		gameWindow.displayMessage("Welcome to the game!");
+		gameWindow.init();
+		mainView.requestFocus();  	
+    }
+
 }

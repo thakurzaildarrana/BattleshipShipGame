@@ -1,6 +1,6 @@
 package com.example.battleship.model;
 
-import com.example.battleship.application.GameWindow;
+import com.example.battleship.application.View;
 
 
 /*
